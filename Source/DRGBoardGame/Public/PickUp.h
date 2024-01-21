@@ -4,29 +4,32 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "Environment.generated.h"
+#include "PickUp.generated.h"
 
-UENUM(BlueprintType) enum EnvironmentType
+UENUM(BlueprintType) enum PickUpType
 {
-	Stalagmite		UMETA(DisplayName = "Stalagmite"),
-	CryoBulb		UMETA(DisplayName = "Cryo Bulb"),
-	ExplosivePlants	UMETA(DisplayName = "Explosive Plants"),
-	MagmaGeysers	UMETA(DisplayName = "Magma Geysers")
+	LootBug			UMETA(DisplayName = "Loot Bug"),
+	RedSugar		UMETA(DisplayName = "Red Sugar"),
+	BarleyBulb		UMETA(DisplayName = "Barley Bulb"),
+	ApocaBloom		UMETA(DisplayName = "Apoca Bloom"),
+	AlienEgg		UMETA(DisplayName = "Alien Egg"),
+	AlienFossil		UMETA(DisplayName = "Alien Fossil")
 };
 
 UCLASS()
-class DRGBOARDGAME_API AEnvironment : public AActor
+class DRGBOARDGAME_API APickUp : public AActor
 {
 	GENERATED_BODY()
 	
 public:	
 	// Sets default values for this actor's properties
-	AEnvironment();
+	APickUp();
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hex Coordinate", Meta = (ExposeOnSpawn = true)) float PositionX;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hex Coordinate", Meta = (ExposeOnSpawn = true)) float PositionY;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hex Coordinate", Meta = (ExposeOnSpawn = true)) bool Top;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "EnvironmentType", Meta = (ExposeOnSpawn = true)) TEnumAsByte<EnvironmentType> TypeOfEnvironment;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PickUpType", Meta = (ExposeOnSpawn = true)) TEnumAsByte<PickUpType> TypeOfPickUp;
 
 protected:
 	// Called when the game starts or when spawned

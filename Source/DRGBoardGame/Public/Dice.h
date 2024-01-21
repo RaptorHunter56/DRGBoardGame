@@ -51,7 +51,7 @@ public:
 	// Sets default values for this actor's properties
 	ADice();
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Dice") TEnumAsByte<DiceType> TypeOfDice;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Dice", Meta = (ExposeOnSpawn = true)) TEnumAsByte<DiceType> TypeOfDice;
 
 protected:
 	// Called when the game starts or when spawned

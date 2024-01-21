@@ -33,13 +33,13 @@ public:
 	// Sets default values for this actor's properties
 	ACave();
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hex Coordinate") float PositionX;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hex Coordinate") float PositionY;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hex Coordinate") int32 RotationPosition;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hex Coordinate") int32 StackPosition;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hex Coordinate") bool Top;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hex Coordinate", Meta = (ExposeOnSpawn = true)) float PositionX;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hex Coordinate", Meta = (ExposeOnSpawn = true)) float PositionY;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hex Coordinate", Meta = (ExposeOnSpawn = true)) int32 RotationPosition;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hex Coordinate", Meta = (ExposeOnSpawn = true)) int32 StackPosition;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hex Coordinate", Meta = (ExposeOnSpawn = true)) bool Top;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "CaveType") TEnumAsByte<CaveType> TypeOfCave;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "CaveType", Meta = (ExposeOnSpawn = true)) TEnumAsByte<CaveType> TypeOfCave;
 
 protected:
 	// Called when the game starts or when spawned
