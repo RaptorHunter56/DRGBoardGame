@@ -1,6 +1,6 @@
 # DRGBoardGame
 
-Welcome to DRGBoardGame! This project aims to provide a digital recreation of the Deep Rock Galactic Board game and expansions, allowing you and your friends to play together from the comfort of your own homes.
+Welcome to DRGBoardGame! This project aims to provide a digital recreation of the Deep Rock Galactic Board game and expansions, allowing me and my friends to play together from the comfort of their own homes.
 
 ### Table of Contents
 * Introduction
