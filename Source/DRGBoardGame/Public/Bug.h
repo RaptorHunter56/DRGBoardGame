@@ -42,6 +42,7 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hex Coordinate", Meta =(ExposeOnSpawn = true)) int32 RotationPosition;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BugType", Meta = (ExposeOnSpawn = true)) TEnumAsByte<BugType> TypeOfBug;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BugType", Meta = (ExposeOnSpawn = true)) int BugHp;
 
 protected:
 	// Called when the game starts or when spawned

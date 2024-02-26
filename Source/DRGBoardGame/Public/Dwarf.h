@@ -28,6 +28,9 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hex Coordinate", Meta = (ExposeOnSpawn = true)) int32 RotationPosition;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "DwarfType", Meta = (ExposeOnSpawn = true)) TEnumAsByte<DwarfType> TypeOfDwarf;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "DwarfType", Meta = (ExposeOnSpawn = true)) int DwarfHp;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "DwarfType", Meta = (ExposeOnSpawn = true)) int DwarfMainGunAmmunition;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "DwarfType", Meta = (ExposeOnSpawn = true)) int DwarfSideGunAmmunition;
 
 protected:
 	// Called when the game starts or when spawned
