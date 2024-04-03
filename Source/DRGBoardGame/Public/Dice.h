@@ -38,7 +38,10 @@ UENUM(BlueprintType) enum class DiceDamageType
 	Stunned				UMETA(DisplayName = "Stunned"),
 	Webbed				UMETA(DisplayName = "Webbed"),
 	Frozen				UMETA(DisplayName = "Frozen"),
-	KnockedOver			UMETA(DisplayName = "Knocked Over")
+	KnockedOver			UMETA(DisplayName = "Knocked Over"),
+
+	OneDamage			UMETA(DisplayName = "One Damage"),
+	RemoveWall			UMETA(DisplayName = "Remove Wall")
 };
 
 
