@@ -12,6 +12,8 @@ Deep Rock Galactic is a cooperative first-person shooter video game developed by
 
 DRGBoardGame is a digital recreation of this board game and its expansions. It serves as a fun project, allowing me to play with my friends overseas, and as an opportunity for me to learn Unreal Engine 5 development.
 
+![Test (2)](https://github.com/RaptorHunter56/DRGBoardGame/assets/31195727/3a5bc14a-e9d9-4855-a70a-eb88b8a386be)
+
 ## Installation
 To install and run this project locally, please follow these steps:
 
