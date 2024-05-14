@@ -1,5 +1,8 @@
 # DRGBoardGame
 
+> [!NOTE]
+> This Project is still a work-in-progress and is not yet playable
+
 Welcome to DRGBoardGame! This project aims to provide a digital recreation of the Deep Rock Galactic Board game and expansions, allowing me and my friends to play together from the comfort of their own homes.
 
 ### Table of Contents
@@ -28,7 +31,7 @@ git clone https://github.com/RaptorHunter56/DRGBoardGame.git
 ## Disclaimer
 Please note that this project is solely intended for personal, non-commercial use. The intellectual property (IP) rights for Deep Rock Galactic and its board game counterpart belong to Ghost Ship Games and Steamforged Games, respectively. DRGBoardGame is not affiliated with, endorsed by, or sponsored by Ghost Ship Games or Steamforged Games.
 
-> [!NOTE]
+> [!IMPORTANT]
 > This repository does not include any STLs
 
 ## License
