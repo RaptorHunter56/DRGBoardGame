@@ -2,6 +2,7 @@
 
 
 #include "Dwarf.h"
+#include "Net/UnrealNetwork.h"
 
 // Sets default values
 ADwarf::ADwarf()
@@ -14,6 +15,8 @@ ADwarf::ADwarf()
 
 	TypeOfDwarf = DwarfType::Driller;
 
+	SetReplicates(true);
+	SetReplicateMovement(true);
 }
 
 // Called when the game starts or when spawned
@@ -30,3 +33,15 @@ void ADwarf::Tick(float DeltaTime)
 
 }
 
+void ADwarf::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
+{
+	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
+	DOREPLIFETIME(ADwarf, PositionX)
+	DOREPLIFETIME(ADwarf, PositionY)
+	DOREPLIFETIME(ADwarf, RotationPosition)
+
+	DOREPLIFETIME(ADwarf, TypeOfDwarf)
+	DOREPLIFETIME(ADwarf, DwarfHp)
+	DOREPLIFETIME(ADwarf, DwarfMainGunAmmunition)
+	DOREPLIFETIME(ADwarf, DwarfSideGunAmmunition)
+}
